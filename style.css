@@ -1,0 +1,122 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --dark: #274472;
+    --mild: #41729F;
+    --light: #5885AF;
+    --lighter: #C3E0E5;
+}
+
+body {
+    background-color: var(--dark);
+}
+
+main {
+    height: 80vmin;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+h1 {
+    color: var(--lighter);
+    font-size: 3rem;
+}
+
+.game {
+    width: 100%;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: center
+}
+
+.container {
+    background-color: var(--light);
+    height: 60vh;
+    width: 60vh;
+    border-radius: 20px;
+    padding-top: 3%;
+    display: grid;
+    grid-template-columns: repeat(3, 25%);
+    grid-template-rows: repeat(3, 25%);
+    justify-content: space-around;
+    row-gap: 5%;
+}
+
+.box {
+    border: none;
+    border-radius: 20%;
+    background-color: var(--lighter);
+    color: var(--mild);
+    font-size: 3rem;
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.521);
+}
+
+.box:hover {
+    background-color: var(--mild);
+    color: var(--lighter);
+}
+
+.score-card {
+    border-radius: 20px;
+    background-color: var(--light);
+    height: 40vh;
+    width: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.turn,
+.result {
+    height: 70px;
+    width: 80%;
+    background: #000;
+    background-color: var(--lighter);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: var(--mild);
+}
+
+.result {
+    display: none;
+}
+#reset, #new-btn{
+
+    height: 50px;
+    width: 150px;
+    border: none;
+    border-radius: 15px;
+    font-size: 1rem;
+    padding: 0px 20px;
+}
+#reset {
+    color: var(--lighter);
+    background-color: var(--dark);
+}
+
+#new-btn {
+    background-color: var(--lighter);
+    color: var(--dark);
+}
+
+#new-btn:hover {
+    color: var(--lighter);
+    background-color: var(--dark);
+}
+
+#reset:hover {
+    background-color: var(--lighter);
+
+    color: var(--dark);
+}
